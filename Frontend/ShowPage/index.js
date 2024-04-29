@@ -18,7 +18,7 @@ async function uploadFile() {
     formData.append('myFile', file);
 
     try {
-        const response = await axios.post("http://localhost:3000/api/uploadFile", formData, {
+        const response = await axios.post("https://fileswift-urfw.onrender.com/api/uploadFile", formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
                 "Authorization": `${jwtToken}`

@@ -4,7 +4,7 @@ const password = document.querySelector('.password');
 async function myFunc(event) {
     event.preventDefault()
     try{
-    const response = await axios.post("http://localhost:3000/Home/sign-up", {
+    const response = await axios.post("https://fileswift-urfw.onrender.com/Home/sign-up", {
         username: username.value,
         password: password.value
     },
