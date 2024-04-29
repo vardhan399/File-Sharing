@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File </title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="upload-form" id="uploadForm" enctype="multipart/form-data">
+            <div id="drop-area">
+                <label for="file">Drag and drop files here or click to select</label>
+                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png">
+            </div>
+            <button type="button" onclick="uploadFile()">Upload File</button>
+        </form>
+    </div>
+  
+    <script src="./index.js"></script>
+</body>
+</html>

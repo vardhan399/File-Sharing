@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/show2.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.upload-form {
+    width: 300px;
+    height: 250px;
+    margin: 50px auto; /* Increase top margin to move the form down */
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 15px; /* Increase bottom margin for better separation */
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+.upload-form input[type="file"] {
+    margin-bottom: 15px; /* Increase bottom margin for better separation */
+    font-size: 14px; /* Adjust font size for better consistency */
+}
+
+.upload-form button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #007bff; /* Add border to the button */
+    padding: 10px 20px;
+    border-radius: 25px; /* Increase border-radius for a rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+.upload-form button:hover {
+    background-color: #0056b3;
+}
+
+#drop-area {
+    border: 3px dashed #007bff; /* Increase border thickness for a more prominent border */
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#drop-area.highlight {
+    border-color: #007bff;
+}
